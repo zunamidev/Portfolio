@@ -67,25 +67,61 @@ header #arrow {
     animation: mover 1s infinite  alternate;
 }
 
-@-webkit-keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
-}
 
-@keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
-}
 
 /* About me */
 section#about {
     width: 100%;
-    min-height: 1000px;
+    min-height: 300px;
     background: #3BB1FF;
-    margin-top: -10px;
+    margin-top: -5%;
+}
+
+#textblock {
+    display: block;
+    width: 40%;
+    color: #FFF;
+    margin-left: 20%;
+
+}
+
+#textblock h3 {
+    font-size: 36px;
+
+}
+
+#textblock p {
+    width: 60%;
+}
+
+.imagebox {
+    margin-top: -25%;
+    left: 58%;
+    background: #FFF;
+    border-radius: 28px;
+    position: absolute;
+    width: 60vh;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.25);
+    height: 45vh;
+    transform: rotate(-14.05deg);
+}
+
+#coder {
+    z-index: 1;
+    width: 27%;
+    position: absolute;
+    left: 60%;
+    margin-top: -20%;
+
+}
+
+.ani {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
 }
 /* Wave  */
 .wave {
+    z-index: -1;
     position: relative;
 }
 
@@ -97,4 +133,17 @@ section#about {
     width: 100%;
     background: url("/assets/img/Waves-Port.svg");
     background-size: cover;
+}
+
+
+/* Animations */
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
 }
