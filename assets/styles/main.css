@@ -115,10 +115,6 @@ section#about {
 
 }
 
-.ani {
-    -webkit-animation: mover 1s infinite  alternate;
-    animation: mover 1s infinite  alternate;
-}
 /* Wave  */
 .wave {
     z-index: -1;
