@@ -3,25 +3,31 @@
     --secondCoolor: "#3CB1FF";
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
 /* Navigation */
-
 nav {
     left: 60%;
-    position: sticky;
+    position: fixed;
     overflow: hidden;
     width: 400px;
+    top: 0;
     /* color: white; */
     background: #0099FF;
     border-radius: 0 0 40px 40px;
     -moz-border-radius: 0 0 40px 40px;
     -webkit-border-radius: 0 0 40px 40px;
     box-shadow: 0 4px 10px rgba(0,0,0, 0.25);;
+    z-index: 9999;
 }
 
 nav ul {
@@ -46,6 +52,12 @@ header #text {
     font-size: 36px;
     margin-top: 10%;
     text-align: center;
+    font-style: normal;
+}
+
+header #text h1:hover {
+    text-decoration: underline;
+    text-decoration-color: #0099FF;
 }
 
 header #arrow {
@@ -62,4 +74,26 @@ header #arrow {
 @keyframes mover {
     0% { transform: translateY(0); }
     100% { transform: translateY(-10px); }
+}
+
+/* About me */
+section#about {
+    width: 100%;
+    min-height: 1000px;
+    background: #3BB1FF;
+    margin-top: -10px;
+}
+/* Wave  */
+.wave {
+    position: relative;
+}
+
+.wave:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: url("/assets/img/Waves-Port.svg");
+    background-size: cover;
 }
