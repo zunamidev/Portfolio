@@ -15,6 +15,7 @@
     nav {
         border-radius: 0;
         left: 0;
+        width: 100%;
     }
 
     nav ul li a#getIn {
