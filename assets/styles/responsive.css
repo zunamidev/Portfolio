@@ -21,12 +21,27 @@
         width: 15%;
     }
 
-    .wave {
-        margin-top: -50%;
-    }
-
     section#about {
-        margin-top: -30%;
+        margin-top: -12%;
+        min-height: 40vh;
+    }
+    #textblock {
+        display: contents;
+        width: 90%;
+        position: absolute;
+        margin-left: 0;
+    }
+    #textblock p {
+        width: 80%;
+        margin-left: 30px;
     }
 
+    #textblock h3 {
+        margin-left: 30px;
+    }
+
+    .ani {
+        display: none;
+        visibility: hidden;
+    }
 }

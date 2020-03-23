@@ -17,10 +17,10 @@ body {
 
 /* Navigation */
 nav {
-    left: 60%;
+    left: 50%;
     position: fixed;
     overflow: hidden;
-    width: 400px;
+    width: 500px;
     top: 0;
     /* color: white; */
     background: #0099FF;
