@@ -82,28 +82,11 @@
 
 @media screen and  (max-width: 1024px) {
 
-    .imagebox {
-        margin-top: -33%;
-        left: 53%;
-    }
 
-    #coder {
-        width: 30%;
-        margin-top: -25%;
-    }
 
 }
 
 @media screen and(min-width: 2560px) {
 
-    .imagebox {
-        margin-top: -15%;
-        height: 40vh;
-    }
-
-    #coder {
-        width: 30%;
-        margin-top: -13%;
-    }
 
 }
