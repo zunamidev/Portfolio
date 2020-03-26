@@ -75,14 +75,22 @@ section#about {
     min-height: 300px;
     background: #3BB1FF;
     margin-top: -5%;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+section#about > * {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 280px;
+}
+
 
 #textblock {
     display: block;
     width: 40%;
     color: #FFF;
     margin-left: 20%;
-
 }
 
 #textblock h3 {
@@ -94,9 +102,11 @@ section#about {
     width: 60%;
 }
 
+section#about::before {
+    content: '';
+    display: table;
+}
 .imagebox {
-    margin-top: -26%;
-    left: 58%;
     background: #FFF;
     border-radius: 28px;
     position: relative;
@@ -108,12 +118,11 @@ section#about {
 
 #coder {
     z-index: 20;
-    width: 30%;
+    width: 60%;
     position: relative;
-    float: right;
-    /*margin-top: -50px;*/
-    right: 10%;
     margin-top: 3%;
+    margin-bottom: -50%;
+    margin-left: 10%;
 }
 
 /* Projects */
@@ -194,6 +203,50 @@ section#about {
 .css {width: 80%; background-color: #456EFF;} /* Blue */
 .js {width: 65%; background-color: #456EFF;} /* Red */
 .php {width: 60%; background-color: #456EFF;} /* Dark Grey */
+
+
+/* Get in Touch*/
+#getInTouch {
+    background-image: url("http://localhost:63342/Portfolio/assets/img/getInTouch.png"); /* The image used */
+    background-color: #392D40; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    position: relative;
+    z-index: -2;
+    margin-top: -20%;
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#getInTouch h1 {
+    color: #FFF;
+    font-size: 28px;
+}
+
+#getInTouch .form {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 25px;
+    margin-top: 20%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    width: 100vh;
+    margin-left: 20%;
+
+}
+
+#getInTouch .form.form input {
+    padding: 17px 12px;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    width: 321px;
+
+}
+
+
+#getInTouch .form.form input[type=submit] {
+    background: #86B3D4;
+}
 
 /* Wave  */
 .wave {
